@@ -23,10 +23,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             KotlinWithComposeTheme {
                 Scaffold(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.fillMaxSize(deleteme),
                     containerColor = MaterialTheme.colorScheme.background
                 ) { innerPadding ->
-                    Box(modifier = Modifier.padding(innerPadding)) {
+                    Box(modifier = Modifier.padding(innerPadding, deleteme)) {
                         MyScreen()
                     }
 //                    Greeting(
